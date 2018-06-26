@@ -24,3 +24,5 @@ There are three main ways to interact with the modules in this project:
 obvious things to see within your Drupal installation. For instance, while the
 day2 will diaplay paragraph output and day3 will display form, day1 does not
 have much that is visible within Drupal.
+
+NOTE: Just download this project and place in modules folder.
