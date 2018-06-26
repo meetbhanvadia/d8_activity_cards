@@ -1,0 +1,12 @@
+name: Theming 101
+type: theme
+description: 'Theming 101'
+package: Other
+core: 8.x
+
+base theme: stable
+
+regions:
+  sidebar_1: Sidebar 1
+  content: Content
+  sidebar_2: Sidebar 2

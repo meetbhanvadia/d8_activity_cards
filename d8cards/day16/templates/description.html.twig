@@ -1,0 +1,22 @@
+
+<h2>Day 16 ­ Dependency Injection Example / Service Container</h2>
+<h3>Excercise</h3>
+<li>● Download the examples module from
+https://www.drupal.org/project/examples . It has a bunch of
+modules but we will be interested in the page_example module
+  only, during the course of this exercise.</li>
+<li>● The module has a PageExampleController defined in
+src/Controller/PageExampleController.php . The simple()
+method in this controller is responsible for rendering the url
+“examples/page_example/simple” when the module is
+  enabled.</li>
+<li>● Let’s modify this method by adding a line such that a log entry is
+  made whenever this url is opened</li>
+<li>● Now, this is the code we will start with for our exercise.</li>
+<li>● Modify the code to use dependency injection to give access to
+logger.factory service from our controller, which will be used to
+  do the logging, instead of \Drupal::logger.</li>
+<li>● The links in additional resources are a great read towards
+  achieving this.</li>
+<H3>SOLUTION</H3>
+<p><a href="/examples/page-example/simple">click here to call simple method in src/Controller/PageExampleController.php</a> and after that check dblog messages.</p>

@@ -1,0 +1,9 @@
+name: 'contact_entity'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: D8cards modules
+dependencies:
+  - d8cards:d8cards
+project: 'd8cards'
+

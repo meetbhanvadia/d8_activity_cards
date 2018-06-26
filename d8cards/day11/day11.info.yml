@@ -1,0 +1,9 @@
+name: Day 11
+type: module
+core: '8.x'
+description: Day 11
+dependencies:
+  - d8cards:d8cards
+  - d8cards:contact_entity
+package: D8cards modules
+project: 'd8cards'

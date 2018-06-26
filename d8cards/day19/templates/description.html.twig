@@ -1,0 +1,28 @@
+
+<h2>Day 19 ­ Twig Templating</h2>
+<h3>Excercise</h3>
+<p>Download and install this module . This module provides a very basic block
+whose template is day19/templates/day19‐twig‐test.html.twig. The build()
+of the block provides variables ­ var1,var2,classes,myclasscount­ that
+  are available in the template to be used.</p>
+<li>Place the block provided by the module (My Block) onto a region on your site from
+block admin interface, so you can view the block </li>
+<li>● If you see the block display “Yourtemplategoeshere..” ­ you are all set now.
+  Go further.</li>
+<li>● Now modify the template as below</li>
+○ If var1 is set, print the value of var1
+○ Move the output of var1 to a <span> whose class names are those
+<li>provided by classes variable passed to the template (Hint ­ Ensure that
+the class names are cleaned enough so they deserve to be class names)</li>
+○ Print the variable $var2[3][‘g’]
+○ Print the word “Hello”, such that it can be translated using the admin
+translation interface
+○ Move the Hello string into a <div> such that the div has all classes in the
+pattern minion0, minion1, minion2, minion3, minion4…..till minionX, where
+X is provided by the value of myclasscount variable
+○ Try out {{ dump() }} and {{ dump(var1) }} on the template to see how the
+printed variables show up on the screen
+<li>With the above changes, the markup of the rendered block is expected to be
+  something like this.</li>
+<h3>SOLUTION</h3>
+    <p>Place block "My Block" on homepage and check result</p>

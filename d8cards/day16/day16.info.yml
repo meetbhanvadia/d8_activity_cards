@@ -1,0 +1,9 @@
+name: Day 16
+type: module
+core: '8.x'
+description: Day 16
+dependencies:
+  - d8cards:d8cards
+  - d8cards:page_example
+package: D8cards modules
+project: 'd8cards'

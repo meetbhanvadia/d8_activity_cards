@@ -1,0 +1,8 @@
+block_library:
+  js:
+    js/day9.js: {}
+
+table_library:
+  css:
+    theme:
+      css/day9_table.css: {}

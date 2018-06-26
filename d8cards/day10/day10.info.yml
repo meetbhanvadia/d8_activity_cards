@@ -1,0 +1,8 @@
+name: Day 10
+type: module
+core: '8.x'
+description: Day 10
+dependencies:
+  - d8cards:d8cards
+package: D8cards modules
+project: 'd8cards'

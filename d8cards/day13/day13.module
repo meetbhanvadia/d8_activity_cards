@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Contains d8cards_day13.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function day13_node_update(EntityInterface $entity) {
+  \Drupal::logger('day13')
+      ->notice('Node with title %title of type %type has been updated.',
+      [
+          '%title' => $entity->label(),
+          '%type' => $entity->bundle(),
+      ]);
+}

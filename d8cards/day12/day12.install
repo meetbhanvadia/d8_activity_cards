@@ -1,0 +1,8 @@
+<?php
+/**
+ * Implements hook_install().
+ */
+function day12_install() {
+\Drupal::service('theme_installer')->install(['theming101']);
+}
+

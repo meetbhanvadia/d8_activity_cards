@@ -1,0 +1,8 @@
+name: Day 12
+type: module
+description: 'Day 12 ­ Theming 101'
+core: 8.x
+dependencies:
+  - d8cards:d8cards
+package: D8cards modules
+project: 'd8cards'

@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Core\Config\FileStorage;
+
+/**
+ * Implementing hook_install to override existing configurations as per the requirement.
+ */
+function day2_install(){
+  $config_path = drupal_get_path('module', 'day2') . '/config/optional';
+  $source = new FileStorage($config_path);
+  $config_storage = \Drupal::service('config.storage');
+  $configs = [
+    'core.entity_form_display.node.article.default',
+    'core.entity_view_display.node.article.default',
+  ];
+  foreach ($configs as $config) {
+        $config_storage->write($config, $source->read($config));
+  }
+
+}

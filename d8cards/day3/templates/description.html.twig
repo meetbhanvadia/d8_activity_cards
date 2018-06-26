@@ -1,0 +1,20 @@
+
+<h2>Day 03 ­ Building Configuration forms</h2>
+<h3>Excercise</h3>
+<p>1. Create a custom module that provides a configuration form
+  available at the url “mymodule/config” to all users with the
+  permission “administer content”. </p>
+<p>2. The form shall have 3 fields. Labels and Types of fields are
+  arbitrary. Ensure you have diverse fields ­ Text, Select, Radio</p>
+<p>3. Get the form to work such that the form values are saved and
+  persisted on the form on reload.</p>
+<p>4. The values submitted on the form should be accessible
+  elsewhere on the same or a different module using the Config
+  API.</p>
+<h3>Bonus Exercise</h3>
+<p>● Create your own permission and use that to restrict this page</p>
+
+{% set config_form = path('mymodule.settings') %}
+
+<h3>SOLUTION</h3>
+<p><a href={{ config_form }}>Click here to go to the final result: configuration form</a></p>

@@ -1,0 +1,6 @@
+day4.d8cards:
+  path: 'd8cards/day4'
+  defaults:
+    _controller: '\Drupal\day4\Controller\Day4Controller::description'
+  requirements:
+    _permission: 'access content'

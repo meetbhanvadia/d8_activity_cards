@@ -1,0 +1,4 @@
+rating_formatter_library:
+  css:
+    theme:
+      css/rating-formatter.css: {}

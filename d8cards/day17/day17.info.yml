@@ -1,0 +1,8 @@
+name: Day 17
+type: module
+description: 'using composer in module'
+core: 8.x
+dependecies:
+  - d8cards:d8cards
+package: D8cards modules
+project: 'd8cards'

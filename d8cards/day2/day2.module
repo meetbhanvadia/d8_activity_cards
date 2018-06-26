@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function day2_theme() {
+    return [
+        'paragraph__social_media__default' => [
+            'base hook' => 'paragraph',
+        ],
+    ];
+}

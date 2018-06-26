@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains day17.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function day17_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the day17 module.
+    case 'help.page.day17':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('using composer in module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

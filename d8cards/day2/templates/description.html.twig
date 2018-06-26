@@ -1,0 +1,24 @@
+
+{#{% trans %}#}
+<h2>Day 02 ­ Paragraphs Module</h2>
+<h3>Excercise</h3>
+<p>1. Create a Paragraph type ­ “Social Media” with the following
+fields ­ 1) Embed Code (Text field that accepts any long text and
+is rendered without any filters (Hint: Create a text format called
+  “Raw”) and 2) Link</p>
+<p>2. On the Article Content type ­ Add a new field referring to the
+  above paragraph type created (Multiple values allowed).</p>
+<p>3. Configure display of the paragraph type and the article content
+type such that the embed code and link are displayed as on the
+  screenshot attached.</p>
+
+<h3>Bonus Exercise</h3>
+<p>● Theme the paragraph type such that the 2 fields (Embed code
+and link, wherever they are shown on any content type, are
+rendered in 2 columns as below:
+{{  "<table><tr><td>Embed
+      Code</td><td>Link</td></tr></table>" | escape('html')}}</p>
+
+<h3>SOLUTION</h3>
+<p><a href={{ '/node/3' }}>Click here to navigate to the result page</a></p>
+{#{% endtrans %}#}

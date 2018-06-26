@@ -1,0 +1,22 @@
+
+<h2>Day 17 - Composer in your module to load PHP libraries</h2>
+<h3>Excercise</h3>
+<p>On a fresh D8 instance, create a custom module</p>
+<li>● Update the module’s composer.json file to include this library ­
+  https://packagist.org/packages/guhelski/forecast­php</li>
+<li>● Install Composer Manager Module, run the init script. Run composer drupal­update such
+that the mentioned library is fetched to the vendor folder and autoloaded and hence is
+  available for use in your module (This might not be required post 8.1.x??)</li>
+<li>● Post 8.1.x, you could directly run composer update from docroot (?)</li>
+<li>● Build a custom block with a configuration form that takes latitude and longitude in the
+  configuration form</li>
+<li>● The block, when enabled should show the forecast for the configured location by in
+simple text as “Forecast is XXXXX with temperature of XXX dec C”.</li>
+<p>This forecast information is retrieved using Forecast wrapper library that we included.</p>
+<li>● API Key you could use = 7411b0e6d5e0c99fbd7405fd6de00cd5 (Alternatively, you
+  could register on forecast.io for the key)</li>
+
+<h3>SOLUTION</h3>
+<p>specify path to module's composer.json in root composer.json and place block "weather forecast"
+  at homepage and then see result.
+</p>

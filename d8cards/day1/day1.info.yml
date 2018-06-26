@@ -1,0 +1,9 @@
+name: Day 1
+type: module
+core: '8.x'
+description: Day 1
+package: D8cards modules
+dependencies:
+  - drupal:node
+  - d8cards:d8cards
+project: 'd8cards'

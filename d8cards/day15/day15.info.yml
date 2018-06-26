@@ -1,0 +1,9 @@
+name: Day 15
+type: module
+description: show the decimal value (between 0 and 5) as a collection of stars.
+core: 8.x
+dependencies:
+  - d8cards:d8cards
+  - d8cards:day4
+package: D8cards modules
+project: 'd8cards'

@@ -1,0 +1,31 @@
+
+<h2>Day 20 ­ Cache API and Cache Tags</h2>
+<h3>Excercise</h3>
+<li>Task in hand is to build a small custom block. The block is fairly
+simple whose content is a concatenated string with the titles of
+the latest 5 published nodes (of any type). Title could be set to
+anything arbitrary. The body of the block should be of the format
+­ [Title of Node A]­[Title of Node B]­[Title of Node C]­[Title of
+Node D]­[Title of Node E] where A, B, C, D, E are the latest 5
+  published nodes on the site.</li>
+<li>● Additional requirement to improve performance is that this block
+should be cached and this cache should be automatically
+invalidated when any of these 5 nodes are updated. We are not
+bothered about new nodes added, but the block should not
+  display an outdated title at any point of time.</li>
+<li>● Hint: Cache the output of the block’s build() such that function
+doesn’t compute the string if it already exists in cache. Set
+cache tags as node:a, node:b, node:c, node:d, node:e where
+  a,b,c,d,e are nids of the retrieved nodes ­ A,B,C,D,E</li>
+<li>● Explore a more cleaner way of implementing this. You could
+avoid all the logic of checking if the cache exists, and if the
+cache tags are valid etc, by just passing the cache tags as
+  “#cache” to the block’s render array.</li>
+<h3>Bonus Exercise</h3>
+<li>● Modify the cache tags to add something more such that the
+block cache is invalidated even when a new node is added
+(published). As of the earlier implementation, the block cache is
+implemented only when any of the nodes represented in the
+  cached block are modified.</li>
+<h3>SOLUTION</h3>
+<p>Place block "Recent Content Cached" at homepage and verify the result</p>

@@ -1,0 +1,119 @@
+<?php
+
+/**
+ * @file
+ * Module file for D8cards.
+ *
+ * This file serves as a stub file for the many Examples modules in the
+ * @link http://drupal.org/project/examples Examples for Developers Project @endlink
+ * which you can download and experiment with.
+ *
+ * One might say that examples.module is an example of documentation. However,
+ * note that the example submodules define many doxygen groups, which may or
+ * may not be a good strategy for other modules.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * @defgroup examples D8cards
+ * @{
+ * Well-documented API examples for a broad range of Drupal core functionality.
+ *
+ * Developers can learn how to use a particular API quickly by experimenting
+ * with the examples, and adapt them for their own use.
+ *
+ * Download the Examples for Developers Project (and participate with
+ * submissions, bug reports, patches, and documentation) at
+ * http://drupal.org/project/examples
+ */
+
+/**
+ * Implements hook_toolbar().
+ */
+function d8cards_toolbar() {
+  // First, build an array of all example modules and their routes.
+  // We resort to this hard-coded way so as not to muck up each example.
+  $examples = [
+    'day1' => 'day1.d8cards',
+    'day2' => 'day2.d8cards',
+    'day3' => 'day3.d8cards',
+    'day4' => 'day4.d8cards',
+    'day5' => 'day5.d8cards',
+    'day6' => 'day6.d8cards',
+    'day7' => 'day7.d8cards',
+    'day8' => 'day8.d8cards',
+    'day9' => 'day9.d8cards',
+    'day10' => 'day10.d8cards',
+    'day11' => 'day11.d8cards',
+    'day12' => 'day12.d8cards',
+    'day13' => 'day13.d8cards',
+    'day14' => 'day14.d8cards',
+    'day15' => 'day15.d8cards',
+    'day16' => 'day16.d8cards',
+    'day17' => 'day17.d8cards',
+    'day18' => 'day18.d8cards',
+    'day19' => 'day19.d8cards',
+    'day20' => 'day20.d8cards',
+    'day21' => 'day21.d8cards',
+  ];
+
+  // Build a list of links for the menu.
+  $links = [];
+  foreach ($examples as $module => $route) {
+    // Get the module info (title, description) from Drupal.
+    $info = system_get_info('module', $module);
+
+    // If there's no info, the example isn't enabled, so don't display it.
+    if (!empty($info)) {
+      $links[$module] = [
+        'title' => t($info['name']),
+        'url' => Url::fromRoute($route),
+        'attributes' => [
+          'title' => t($info['description']),
+        ],
+      ];
+    }
+  }
+
+  // Add a link to enable all examples.
+  $links['enable_examples'] = [
+    'title' => t('Enable D8cards Modules'),
+    'url' => Url::fromRoute('system.modules_list'),
+    'options' => [
+      'title' => t('Enable more examples in on the Extend page.'),
+    ],
+    'fragment' => 'edit-modules-d8cards-modules',
+  ];
+
+  // Create the examples toolbar render array.
+  $items['examples'] = [
+    '#type' => 'toolbar_item',
+    'tab' => [
+      '#type' => 'link',
+      '#title' => t('D8cards'),
+      '#url' => Url::fromRoute('<front>'),
+      '#attributes' => [
+        'title' => t('Developer Examples'),
+        'class' => ['toolbar-icon', 'toolbar-icon-examples'],
+      ],
+    ],
+    'tray' => [
+      '#heading' => t('Developer Examples'),
+      'shortcuts' => [
+        '#theme' => 'links__toolbar_example',
+        '#links' => $links,
+        '#attributes' => [
+          'class' => ['toolbar-menu'],
+        ],
+      ],
+    ],
+    '#weight' => 99,
+  ];
+
+  return $items;
+}
+
+/**
+ * @} End of 'defgroup examples'.
+ */

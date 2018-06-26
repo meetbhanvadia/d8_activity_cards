@@ -1,0 +1,8 @@
+name: Day 13
+type: module
+description: Day 13 ­ Logging in D8
+core: 8.x
+dependencies:
+  - d8cards:d8cards
+package: D8cards modules
+project: 'd8cards'

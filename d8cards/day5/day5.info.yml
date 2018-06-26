@@ -1,0 +1,9 @@
+name: Day 5
+type: module
+description: 'Day 05 - Drupal 8 Block System'
+core: 8.x
+dependencies:
+  - drupal:default_content
+  - d8cards:d8cards
+package: D8cards modules
+project: 'd8cards'

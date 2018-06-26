@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: rajan.valecha
+ * Date: 22/06/18
+ * Time: 12:31 AM
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function day15_theme() {
+  return array(
+    'rating_formatter' => array(
+      'variables' => array('percentage' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implements template_preprocess_rating_formatter().
+ */
+function template_preprocess_rating_formatter(&$vars) {
+  $vars['percentage'] = ($vars['percentage']/5)*100;
+}

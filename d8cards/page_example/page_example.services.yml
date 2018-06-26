@@ -1,0 +1,5 @@
+services:
+  mymodule.subscriber:
+    class: Drupal\page_example\EventSubscriber\DemoSubscriber
+    tags:
+      - {name: event_subscriber}

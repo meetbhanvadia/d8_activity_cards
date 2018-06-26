@@ -1,0 +1,8 @@
+name: D8 cards
+type: module
+description: 'Provides solution to D8 cards'
+package: D8cards modules
+dependencies:
+  - drupal:toolbar
+core: '8.x'
+project: 'd8cards'
