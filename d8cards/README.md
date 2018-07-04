@@ -18,11 +18,9 @@ These activities are meant to teach you about code-level development for Drupal
 How To Use
 -----------
 
-There are three main ways to interact with the modules in this project:
-
-1. Enable the modules and use them within Drupal. Not all modules will have
+Enable the modules and use them within Drupal. Not all modules will have
 obvious things to see within your Drupal installation. For instance, while the
-day2 will diaplay paragraph output and day3 will display form, day1 does not
+day2 will display paragraph output and day3 will display form, day1 does not
 have much that is visible within Drupal.
 
-NOTE: Just download this project and place in modules folder.
+NOTE: Just download this repo and place in modules folder.
